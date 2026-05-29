@@ -15,22 +15,39 @@ A Contrastive Study of English and Japanese Middle Constructions: Reconstructing
 |---|---|
 | `NLC-M_paper_draft.docx` | 論文本文（Word形式） |
 | `paper.js` | docx生成スクリプト（docx-js使用） |
+| `conversation_log.md` | 研究セッション全記録（査読・理論構築・論文執筆） |
 
 ## 主要な理論的提案
 
 本稿は **NLC-M（Negation Licensing Condition for Middles）** を提案する。
 
-- 日本語MLCにおいてILP読みはHighNegP（否定辞-nai）の統語的存在を認可条件とする
-- -naiはDe Morgan変換を通じてTELIC素性を消去し（Telicity Erasure）、GEN演算子を活性化する
-- wa標示によるSpec-TopP移動がHighNegPの生起を構造的に強制する
+```
+[wa-TopP移動] → [HighNegP（-nai）生起]
+  → [De Morgan変換: ¬∃e[POSS(e)∧TELIC(e)] ≡ ∀e[¬POSS(e)∨ATELIC(e)]]
+  → [Telicity Erasure] → [GEN演算子活性化] → [ILP読みの派生]
+```
 
-## 未解決問題（要検討事項）
+## 未解決問題チェックリスト
 
-- [ ] De Morgan変換とGEN活性化のブリッジ原理の形式化（Task 3）
-- [ ] High vs. Low Negationの統語的診断（Task 4）
-- [ ] Lekakou (2005) との非対格/非能格問題の整合（Task 5）
+- [ ] Task 3: De Morgan変換とGEN活性化のブリッジ原理（Chierchia 1995）
+- [ ] Task 4: High vs. Low Negationの統語的診断（副詞スコープ・数量詞・語順）
+- [ ] Task 5: Lekakou (2005) との非対格/非能格整合（Miyagawa 1989要）
 - [ ] GenP投射の独立動機付け
 - [ ] Obligatory Adjunct問題の再定式化
+- [ ] HTA条件の形式的導出
+
+## 文献状況
+
+| 文献 | 状況 |
+|---|---|
+| 劉建 (2010) | ✅ 全文確認 |
+| Cheon (2012) | ✅ 確認済 |
+| Taguchi & Niinuma (2009) | ✅ CIL18予稿集 |
+| Chierchia (1995) | ✅ 入手済 |
+| Lekakou (2005) | ✅ 分析済 |
+| Pardeshi (2008) | ❌ 未入手（Luk 2022で代替） |
+| Diesing (1992) | ❌ 未入手（Kratzer 1995で代替可） |
+| Miyagawa (1989) | ⚠️ 未入手（Task 5に必須） |
 
 ---
 
